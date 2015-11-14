@@ -1,24 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow" >
-  <property name="geometry" >
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>689</width>
+    <height>410</height>
    </rect>
   </property>
-  <property name="windowTitle" >
+  <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QMenuBar" name="menuBar" />
-  <widget class="QToolBar" name="mainToolBar" />
-  <widget class="QWidget" name="centralWidget" />
-  <widget class="QStatusBar" name="statusBar" />
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>100</y>
+      <width>88</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Create Table</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="clickcount">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>70</y>
+      <width>111</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Click numero</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>10</y>
+      <width>451</width>
+      <height>341</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bu_addRow">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>140</y>
+      <width>88</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Add Row</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bu_removeRow">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>220</y>
+      <width>95</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Remove Row</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bu_addColumn">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>180</y>
+      <width>111</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Add Column</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bu_removeColumn">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>270</y>
+      <width>114</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string>Remove Column</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>689</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuType_Here_Menu">
+    <property name="title">
+     <string>Type Here Menu</string>
+    </property>
+    <addaction name="actionAlgo_aqui"/>
+    <addaction name="actionOtracosa_aqui"/>
+    <addaction name="actionNo_se_que_aqui"/>
+    <addaction name="actionAgregar"/>
+    <addaction name="actionModificar"/>
+    <addaction name="actionEliminar"/>
+    <addaction name="actionGuardar"/>
+    <addaction name="actionInformacion"/>
+    <addaction name="actionEditar"/>
+    <addaction name="actionCorrer"/>
+    <addaction name="actionSaltar"/>
+   </widget>
+   <widget class="QMenu" name="menuAyuda">
+    <property name="title">
+     <string>Ayuda</string>
+    </property>
+    <addaction name="actionAcerca"/>
+    <addaction name="actionManual"/>
+    <addaction name="actionCodigo_Fuente"/>
+    <addaction name="actionVersion"/>
+   </widget>
+   <addaction name="menuType_Here_Menu"/>
+   <addaction name="menuAyuda"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>RightToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionAlgo_aqui">
+   <property name="text">
+    <string>algo aqui</string>
+   </property>
+  </action>
+  <action name="actionOtracosa_aqui">
+   <property name="text">
+    <string>otracosa aqui</string>
+   </property>
+  </action>
+  <action name="actionNo_se_que_aqui">
+   <property name="text">
+    <string>no se que aqui</string>
+   </property>
+  </action>
+  <action name="actionAgregar">
+   <property name="text">
+    <string>agregar</string>
+   </property>
+  </action>
+  <action name="actionModificar">
+   <property name="text">
+    <string>modificar</string>
+   </property>
+  </action>
+  <action name="actionEliminar">
+   <property name="text">
+    <string>eliminar</string>
+   </property>
+  </action>
+  <action name="actionGuardar">
+   <property name="text">
+    <string>guardar</string>
+   </property>
+  </action>
+  <action name="actionInformacion">
+   <property name="text">
+    <string>informacion</string>
+   </property>
+  </action>
+  <action name="actionEditar">
+   <property name="text">
+    <string>editar</string>
+   </property>
+  </action>
+  <action name="actionCorrer">
+   <property name="text">
+    <string>correr</string>
+   </property>
+  </action>
+  <action name="actionSaltar">
+   <property name="text">
+    <string>saltar</string>
+   </property>
+  </action>
+  <action name="actionAcerca">
+   <property name="text">
+    <string>acerca</string>
+   </property>
+  </action>
+  <action name="actionManual">
+   <property name="text">
+    <string>Manual</string>
+   </property>
+  </action>
+  <action name="actionCodigo_Fuente">
+   <property name="text">
+    <string>Codigo Fuente</string>
+   </property>
+  </action>
+  <action name="actionVersion">
+   <property name="text">
+    <string>Version</string>
+   </property>
+  </action>
  </widget>
- <layoutDefault spacing="6" margin="11" />
- <pixmapfunction></pixmapfunction>
+ <layoutdefault spacing="6" margin="11"/>
  <resources/>
  <connections/>
 </ui>
